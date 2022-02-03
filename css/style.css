@@ -1,0 +1,237 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;  
+}
+/* CSS variables */
+:root{
+    --navbar-height: 60px;
+    --text-shadow: rgba(220, 20, 60, 0.815)
+}
+/* Utility elements start*/
+.h-primary{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 3.8rem;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px var(--text-shadow);
+}
+.btn{
+    background-color: var(--text-shadow);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all .2s ease-in-out ;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+.btn:hover{
+    background-color: rgba(250, 250, 250, 0.849);
+    color: crimson;
+    box-shadow: 5px 5px 10px crimson;
+    transform: translate(2px,2px);
+}
+/* Utility elements end */
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation section start */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0px;
+    margin-bottom: 10px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo img{
+    height: 60px;
+    margin: 0px 9px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+#navbar ul li a{
+    display: block;
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 3px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/* Navigation section end */
+/* Home section start */
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    color: white;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    background: linear-gradient( rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.473) ), url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin-top: 40px;
+}
+#home button{
+    margin: 50px 3px;
+}
+/* Home section end */
+/* Services start */
+#services{
+    display: flex;
+    flex-direction: column;
+}
+#services h1{
+    margin-top: 60px;
+}
+#services-container{
+    display: flex;
+}
+.services{
+    border: 2px solid var(--text-shadow);
+    border-radius: 15px;
+    background-color: rgba(212, 212, 212, 0.897);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+.services img{
+    margin: auto;
+    display: block;
+    height: 250px;
+    width: 250px
+}
+.services h2{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 380;
+    font-size: 2.5rem;
+    margin: 30px 0px;
+    text-shadow: 2px 2px 10px rgba(220, 20, 60, 0.527);
+}
+.services p{
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+}
+/* Services section end */
+/* Clients section start */
+#clients{
+    margin-bottom: 60px;
+}
+#clients h1{
+    margin-bottom: 50px;
+}
+#clients-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#clients-container::before{
+    content: "";
+    margin-top: 30px;
+    background: linear-gradient( rgba(255, 236, 236, 0.479), rgba(255, 252, 252, 0.479) ), url(../bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 300px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients img{
+    height: 200px;
+    width: 200px;
+}
+/* Clients section end */
+/* Contacts section start */
+#contact h1{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#contact-container{
+    display: flex;
+    flex-direction: column;
+
+}
+#contact-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+.form{
+    padding: 30px 10px;
+    line-height: 10px;
+    letter-spacing: 2px;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.form input{
+    margin: 6px;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 98%;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    border: none;
+}
+#form-submit button{
+    margin: 20px 3px 10px 3px;
+}
+/* Contacts section end */
+/* Footer section start */
+#footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+/* Footer section end */
