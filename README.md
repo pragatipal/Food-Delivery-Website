@@ -12,4 +12,4 @@ Primary Azure Technology : Static Web Apps, Web Apps, Web
 
 Other Azure Technologies : N/A
 
-URL : 
+URL : https://gentle-field-01c12a510.1.azurestaticapps.net
