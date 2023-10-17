@@ -12,4 +12,4 @@ Primary Azure Technology : Static Web Apps, Web Apps, Web
 
 Other Azure Technologies : N/A
 
-[Live Here] (https://pragatipal.github.io/Food-Delivery-Website/)
+https://pragatipal.github.io/Food-Delivery-Website/
